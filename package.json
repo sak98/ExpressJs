@@ -1,0 +1,9 @@
+{
+  "name": "ExpressJS",
+  "version": "1.0.0",
+  "description": "First Express JS application",
+  "main": "server.js",
+  "author": "Arun",
+  "license": "MIT",
+  "private": false
+}
