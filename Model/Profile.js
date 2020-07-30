@@ -5,7 +5,7 @@
 //load mongoose modules
 const mongoose = require("mongoose");
 // init schema
-const schema = mongoose.schema;
+const Schema = mongoose.Schema;
 
 //create a new schema instance .....should be an OBJECT
 
@@ -20,10 +20,12 @@ const ProfileSchema = new Schema({
     required: true,
   },
   phone: { type: String, required: true },
-  data: {
+  date: {
     type: Date,
     default: Date.now,
   },
 });
 
 //export  schema
+
+module.exports =  mongoose.model("profile",ProfileSchema);
